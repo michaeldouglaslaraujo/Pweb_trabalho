@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="login.css">
+		<title>Projeto P1 - Login </title>
+		<!--<meta name="description" content="Atividade 03 da disciplina Programação para WEB do curso de ADS da Fatec Ipiranga" />
+		<meta name="keywords" content="programação, web, fatec, ads" />
+		<meta name="author" content="<nome>, ADS Noturno, Fatec Ipiranga" /> -->
+	</head>
+	<body>
+		<div id="fundo">
+			<div id="topo">
+				<h1> Login </h1>
+			</div>
+			<div id="corpo">
+				<div id="input">
+					Email:  <input type="email" id="txtEmail" required  placeholder=" Entre com o seu E-mail"/><br/><br/>
+					Senha:  <input type="text" id="senha" required placeholder=" Entre com sua senha" />
+				</div>
+				<label><input type="buttom" id="entrar" value="Entrar" /> </label><br/><br/>
+			</div>
+		</div>
+	</body>
+</html>
+
+ <script lang="javascript">
+
+function validar()
+{
+		
+	if(senha.value.lenght <8 ||
+		isNaN(senha.value) == false)
+	{
+		alert("Informe uma senha alfanumerica de no minimo 8 carecteres!");
+		senha.focus();
+		return false;
+	}
+	
+	if(email.value.lenght< 6 ||
+		email.value.indexOf("@") < 1 || //indexOf - traz apos do caracter na string
+		email.value.lastIndexOf(".") <= email.value.indexOf("@"))
+	{
+		alert("inform seu e-mail no formato valido!");
+		email.focus();
+		return false;
+	}
+		
+
+}
+</script>
