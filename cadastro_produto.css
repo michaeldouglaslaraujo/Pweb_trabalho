@@ -14,19 +14,21 @@ input
 }
 label
 {
-	padding-left:35%;
+	padding-left:55%;
 	
 }
 #fundo
 {
 	background-color: #FF6347;
-	width:30%;
+	width:45%;
 	padding: 0.5%;
-	height:400px;
+	height:500px;
 	border-radius:5%;
 	margin: 0 auto;
 	margin-top: 5%;
- }
+
+
+	}
 
 #fundo #topo
 {
@@ -48,7 +50,7 @@ label
 	color: #FF6347;
 	width:99%;
 	padding: 0.5%;
-	height: 78%;
+	height: 90%;
 	border-radius: 0% 0% 6% 6%;
 	justify-content: center;
 	
@@ -56,11 +58,11 @@ label
 }
 #fundo #corpo #input {
 	font-size: 20px;
-	margin-top: 20%;
-	padding-left: 10%;
+	margin-top: 05%;
+	padding-left: 5%;
 	
 }
-#fundo #corpo #entrar {
+#fundo #corpo #cadastrar {
 	font-size: 20px;
 	margin-top: 15%;
 	border-radius: 5%;
@@ -80,7 +82,7 @@ label
 	background-color: #FF6347;
 	width:80%;
 	padding: 0.5%;
-	height:400px;
+	height:500px;
 	border-radius:5%;
 	margin: 0 auto;
 	margin-top: 5%;
