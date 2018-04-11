@@ -6,15 +6,22 @@ body
 
 input
 {
-	border: none;
-	border-bottom: 2px solid #000;
+	border: 1.5px solid #473C8B;
 	border-radius: 5px;
 	box-shadow: none;
-	width: 65%;
+	width: 75%;
+	height: 22px;
+}
+select
+{
+	border: 1.5px solid #473C8B;
+	border-radius: 5px;
+	width: 40%;
+	font-size: 17px;
 }
 label
 {
-	padding-left:55%;
+	padding-left:35%;
 	
 }
 #fundo
@@ -22,13 +29,13 @@ label
 	background-color: #FF6347;
 	width:45%;
 	padding: 0.5%;
-	height:500px;
+	height:85%;
 	border-radius:5%;
 	margin: 0 auto;
 	margin-top: 5%;
 
 
-	}
+}
 
 #fundo #topo
 {
@@ -60,11 +67,12 @@ label
 	font-size: 20px;
 	margin-top: 05%;
 	padding-left: 5%;
-	
+	margin-left:15%;
+
 }
 #fundo #corpo #cadastrar {
 	font-size: 20px;
-	margin-top: 15%;
+	margin-top: 10%;
 	border-radius: 5%;
 	border: none;
 	background-color: #473C8B;
@@ -75,7 +83,17 @@ label
 	padding: 3%;
 }
 
-@media screen and (min-width:0px) and (max-width:600px)
+#fundo #corpo #sim
+{
+	width: 5%;
+	
+}
+#fundo #corpo #não
+{
+	width: 5%;
+	
+}
+/*@media screen and (min-width:0px) and (max-width:600px)
 {
 	#fundo
 {
@@ -100,4 +118,4 @@ label
 	display: flex;
 	justify-content: center;
 	
-}
+}*/ 

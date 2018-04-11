@@ -14,14 +14,23 @@
 			</div>
 			<div id="corpo">
 				<div id="input">
-					Código do Produto:  <input type="cod_prod" id="cod_prod" required  placeholder=" Código de Cadastro"/><br/><br/>
-					Nome:  <input type="nome" id="txtNomeProduto" required  placeholder=" Entre com o nome do Produto"/><br/><br/>
-					Descritivo do Produto: <input type="descricao" id="txtDescricaoProduto" required  placeholder=" Entre com o Descrição do Produto"/><br/><br/>
-					Custo de Aquisição: <input type="valor" id="numAquisicaoProd" required  placeholder=" Entre com o valor de Aquisição do Produto"/><br/><br/>
-					Porcentagem de Lucro desejado: <input type="valor" id="numLucroProd" required  placeholder=" Entre com o Lucro desejado sobre a unidade do produto"/><br/><br/>
-					Valor de Venda: <input type="valor" id="numValorVendaProd" required  placeholder=" Valor de Venda do Produto (Preenchido Automaticamente)."/><br/><br/>
-					Ativo:  <br/><br/>
-					Fornecedor:  <br/>
+					Código do Produto: </br> <input type="cod_prod" id="cod_prod" required  placeholder=" Código de Cadastro"/><br/><br/>
+					Nome:  </br><input type="nome" id="txtNomeProduto" required  placeholder=" Entre com o nome do Produto"/><br/><br/>
+					Descritivo do Produto:</br> <input type="descricao" id="txtDescricaoProduto" required  placeholder=" Entre com o Descrição do Produto"/><br/><br/>
+					Custo de Aquisição: </br><input type="valor" id="numAquisicaoProd" required  placeholder=" Entre com o valor de Aquisição do Produto"/><br/><br/>
+					Porcentagem de Lucro desejado:</br> <input type="valor" id="numLucroProd" required  placeholder=" Entre com o Lucro desejado sobre a unidade do produto"/><br/><br/>
+					Valor de Venda: </br><input type="valor" id="numValorVendaProd" required  placeholder=" Valor de Venda do Produto (Preenchido Automaticamente)."/><br/><br/>
+					Ativo:  <input type="radio" id="sim" name="ativo" />Sim
+							<input type="radio" id="não" name="ativo" />Não<br/><br/>
+					Fornecedor:  
+					<select id="fornecedor">			
+						<option>Caisma Lustres</option>
+						<option>DNA Lustres</option>
+						<option>Henrilustres</option>
+						<option>Lustres Bounganville</option>
+						<option>MDL Luz e Cristal</option>
+						<option selected>MZ Lustres</option>
+					</select>
 				</div>
 				<label><input type="buttom" id="cadastrar" value="Cadastrar" /> </label><br/><br/>
 			</div>
