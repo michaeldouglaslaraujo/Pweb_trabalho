@@ -1,0 +1,52 @@
+
+body
+{
+	background-image: url(imageFundo2.jpg);
+	height: 300px;
+	position: relative;
+	width: 100%;
+}
+#fundo
+{
+	background-color: #FF6347;
+	width:1000px;
+	padding: 0.5%;
+	height:1200px;
+	border-radius:5%;
+	margin: 0 auto;
+	margin-top: 0%;
+ }
+
+#fundo #topo
+{
+	background-color: #473C8B;
+	width:990px;
+	padding: 0.5%;
+	height: 60px;
+	border-radius: 25% 25% 0% 0%;
+	display: flex;
+	margin-top: 0.5%;
+	font-size: 20px;
+	color: white;
+}
+
+#fundo #corpo
+{
+	background-color: white;
+	color: #FF6347;
+	width:990px;
+	padding: 0.5%;
+	height: 1100px;
+	border-radius: 0% 0% 6% 6%;
+	justify-content: center;
+	
+}
+ 
+#topo p {
+	margin: auto;
+}
+#corpo #QuemSomos{
+	margin: 15%;
+	font-size: 20px;
+	
+}

@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="menu.css">
+		<title>Projeto P1 - Menu </title>
+	</head>
+	<body>
+		<div id="fundo">
+			<div id="topo">
+				<p id="QuemSomosp"> Quem Somos? </p>
+				<p><ul> Funcionalidades </ul><p>
+				<p> <li id="cadastrar"> Cadastrar Produto</li></p>
+				<p> <li id="lista"> Lista de Produtos </li> </p> 
+				<p> FAQ </p>
+			</div>
+			
+			<div id="corpo">
+				<p class="p" id="load"></p>
+				<p class="p" id="QuemSomos">Quem Somos? </br></br> Somos uma loja virtual que comercializa roupas das franquias de desenhos,
+				filmes, seriados, games e outros relacionados ao mundo nerd, geek e a cultura pop.
+				Os produtos que comercializamos são escolhidos para diferentes tipos de pessoas, e buscando trazer
+				sempre novidades e itens diferenciados para que nossos clientes tenham a melhor experiência Geek/Nerd.  </p>
+			</div>	
+		</div>
+	</body>
+</html>
+<script lang="javascript" src="jquery-3.3.1.min.js"></script>
+<script lang="javascript">
+$("li").hide();
+$("ul").click(function(){
+	$("li").show(1000);
+});
+$("p").click(function(){
+	$("li").hide(1000);
+});
+$("p").click(function(){
+	$(".p").hide(1000); z
+});
+
+$("#lista").click(function(){
+	$("#load").load("lista.html");
+	$("#QuemSomos").hide(1000);
+});
+$("#cadastrar").click(function(){
+	$(location).attr('href', 'cadastro_produto.html');
+});
+
+</script>

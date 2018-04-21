@@ -3,9 +3,6 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="cadastro_produto.css">
 		<title>Projeto P1 - Cadastro de Produto </title>
-		<!--<meta name="description" content="Atividade 03 da disciplina Programação para WEB do curso de ADS da Fatec Ipiranga" />
-		<meta name="keywords" content="programação, web, fatec, ads" />
-		<meta name="author" content="<nome>, ADS Noturno, Fatec Ipiranga" /> -->
 	</head>
 	<body>
 		<div id="fundo">
@@ -22,27 +19,20 @@
 					Valor de Venda: </br><input type="valor" id="numValorVendaProd" required  placeholder=" Valor de Venda do Produto (Preenchido Automaticamente)."/><br/><br/>
 					Ativo:  <input type="radio" id="sim" name="ativo" />Sim
 							<input type="radio" id="não" name="ativo" />Não<br/><br/>
-					Fornecedor:  
-					<select id="fornecedor">			
-						<option>Caisma Lustres</option>
-						<option>DNA Lustres</option>
-						<option>Henrilustres</option>
-						<option>Lustres Bounganville</option>
-						<option>MDL Luz e Cristal</option>
-						<option selected>MZ Lustres</option>
-					</select>
+					
 				</div>
-				<label><input type="buttom" id="cadastrar" value="Cadastrar" /> </label><br/><br/>
+				<label><input type="buttom"  value="Cadastrar" id="cadastrar" /> </label><br/><br/>
+				<label><input type="buttom"  value="Voltar" id="voltar"/> </label><br/><br/>
 			</div>
 		</div>
 	</body>
 </html>
 
- <script lang="javascript">
+<script lang="javascript" src="jquery-3.3.1.min.js"></script>
+<script lang="javascript">
 
-function validar()
-{
+$("#voltar").click(function(){
+	$(location).attr('href', 'menu.html');
+});
 
-
-}
 </script>

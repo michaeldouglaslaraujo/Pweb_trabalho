@@ -1,7 +1,7 @@
 
 body
 {
-	background-image: url(imgFundo.jpg);
+	background-image: url(imageFundo2.jpg);
 }
 
 input
@@ -12,16 +12,23 @@ input
 	width: 75%;
 	height: 22px;
 }
-select
-{
-	border: 1.5px solid #473C8B;
-	border-radius: 5px;
-	width: 40%;
-	font-size: 17px;
-}
+
 label
 {
 	padding-left:35%;
+	
+}
+#voltar
+{
+	background-color:#473C8B;
+	color: white;
+	border-radius: 5px;
+	box-shadow: none;
+	width: 20%;
+	height: 50px;
+	font-size: 20px;
+	padding-left: 5%;
+	margin-left:5%;
 	
 }
 #fundo
