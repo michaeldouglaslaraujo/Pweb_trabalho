@@ -21,6 +21,7 @@
 							<input type="radio" id="não" name="ativo" />Não<br/><br/>
 					
 				</div>
+				
 				<label><input type="buttom"  value="Cadastrar" id="cadastrar" /> </label><br/><br/>
 				<label><input type="buttom"  value="Voltar" id="voltar"/> </label><br/><br/>
 			</div>
@@ -31,8 +32,19 @@
 <script lang="javascript" src="jquery-3.3.1.min.js"></script>
 <script lang="javascript">
 
-$("#voltar").click(function(){
-	$(location).attr('href', 'menu.html');
-});
+$("#voltar").click(
+	function()
+	{
+		$(location).attr('href', 'menu.html');
+	}
+);
+
+$("#bt1").click (
+		function(){
+			var x = $("#txtNomeProduto").val();//.value
+			$("p").html(x);
+			$("ul").append("<li>" + x +"</li>");
+		}
+	);
 
 </script>

@@ -8,10 +8,10 @@
 		<div id="fundo">
 			<div id="topo">
 				<p id="QuemSomosp"> Quem Somos? </p>
-				<p><ul> Funcionalidades </ul><p>
+				<p><ul id="funcionalidades"> Funcionalidades </ul><p>
 				<p> <li id="cadastrar"> Cadastrar Produto</li></p>
 				<p> <li id="lista"> Lista de Produtos </li> </p> 
-				<p> FAQ </p>
+				<p><ul id="logoff"> Deslogar <ul></p>
 			</div>
 			
 			<div id="corpo">
@@ -24,21 +24,20 @@
 		</div>
 	</body>
 </html>
+
 <script lang="javascript" src="jquery-3.3.1.min.js"></script>
 <script lang="javascript">
+
 $("li").hide();
-$("ul").click(function(){
-	$("li").show(1000);
-});
-$("p").click(function(){
-	$("li").hide(1000);
-});
-$("p").click(function(){
-	$(".p").hide(1000); z
+
+$("#funcionalidades").click(function()
+{
+	$("li").toggle(1000);
 });
 
 $("#lista").click(function(){
 	$("#load").load("lista.html");
+	$(location).attr('href', 'lista.html');
 	$("#QuemSomos").hide(1000);
 });
 $("#cadastrar").click(function(){

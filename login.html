@@ -15,36 +15,39 @@
 			<div id="corpo">
 				<div id="input">
 					Email:  <input type="email" id="txtEmail" required  placeholder=" Entre com o seu E-mail"/><br/><br/>
-					Senha:  <input type="text" id="senha" required placeholder=" Entre com sua senha" />
+					Senha:  <input type="password" id="senha" required placeholder=" Entre com sua senha" />
 				</div>
-				<label><input type="buttom" id="entrar" value="Entrar" /> </label><br/><br/>
+				<label><input type="buttom" id="entrar" value="Entrar" onclick="validar()"; /> </label><br/><br/>
 			</div>
 		</div>
 	</body>
 </html>
-
- <script lang="javascript">
+<script lang="javascript" src="jquery-3.3.1.min.js"></script>
+<script lang="javascript">
 
 function validar()
 {
-		
-	if(senha.value.lenght <8 ||
+	if(txtEmail.value.lenght< 6 ||
+		txtEmail.value.indexOf("@") < 1 || //indexOf - traz apos do caracter na string
+		txtEmail.value.lastIndexOf(".") <= txtEmail.value.indexOf("@"))
+	{
+		alert("informe seu e-mail no formato valido!");
+		txtEmail.focus();
+		return false;
+	}
+	else if(senha.value.lenght <8 ||
 		isNaN(senha.value) == false)
 	{
 		alert("Informe uma senha alfanumerica de no minimo 8 carecteres!");
 		senha.focus();
 		return false;
 	}
-	
-	if(email.value.lenght< 6 ||
-		email.value.indexOf("@") < 1 || //indexOf - traz apos do caracter na string
-		email.value.lastIndexOf(".") <= email.value.indexOf("@"))
+	else 
 	{
-		alert("inform seu e-mail no formato valido!");
-		email.focus();
-		return false;
-	}
-		
+			$(location).attr('href', 'lista.html');
+	}		
 
 }
+
+
 </script>
