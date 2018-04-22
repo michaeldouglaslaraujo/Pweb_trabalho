@@ -37,11 +37,18 @@ $("#funcionalidades").click(function()
 
 $("#lista").click(function(){
 	$("#load").load("lista.html");
-	$(location).attr('href', 'lista.html');
+	$("#load").show(1000);
 	$("#QuemSomos").hide(1000);
 });
 $("#cadastrar").click(function(){
 	$(location).attr('href', 'cadastro_produto.html');
 });
-
+$("#QuemSomosp").click(function(){
+	$("li").hide(1000);
+	$("#load").hide(1000);
+	$("#QuemSomos").show(1000);
+});
+$("#logoff").click(function(){
+	$(location).attr('href', 'login.html');
+});
 </script>
