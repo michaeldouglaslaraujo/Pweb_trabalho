@@ -19,18 +19,17 @@
 					Valor de Venda: </br><input type="numValorVendaProd" id="numValorVendaProd" required  placeholder=" Valor de Venda do Produto (Preenchido Automaticamente)."/><br/><br/>
 				</div>
 				
-				<label><input type="buttom"  value="Cadastrar" id="cadastrar" name="cadastrar" onclick="validar()";/> </label><br/><br/>
-				  <?php
-
+				<label><input type="buttom"  name="cadastrar" value="Cadastrar" href="cadastro_produto.php" /> </label><br/><br/>
+				<label><input type="buttom"  name="voltar" value="Voltar" onclick="voltar()";/> </label><br/><br/>
+			</div>
+		</div>
+	
+				<?php
 					if(isset($_POST["cadastrar"]))
 					{
 						inserir();
 					}
-	
-					?>
-				<label><input type="buttom"  value="Voltar" id="voltar" onclick="voltar()";/> </label><br/><br/>
-			</div>
-		</div>
+				?>
 	</body>
 </html>
 
@@ -43,64 +42,6 @@ function voltar()
 	$(location).attr('href', 'menu.html');
 }
 
-
-
-function validar()
-{
-	if(txtNomeProduto.value.lenght <20 ||
-		isNaN(txtNomeProduto.value) == false)
-	{
-		alert("Nome do Produto invalido!");
-		txtNomeProduto.focus();
-		return false;
-	}
-	else if(txtDescricaoProduto.value.lenght <50 ||
-		isNaN(txtDescricaoProduto.value) == false)
-	{
-		alert("Descrição inválida!");
-		txtDescricaoProduto.focus();
-		return false;
-	}
-		else if(numAquisicaoProd.value.lenght <1 ||
-		isNaN(numAquisicaoProd.value) == false)
-	{
-		alert("Valor de Aquisição inválido!");
-		numAquisicaoProd.focus();
-		return false;
-	}
-		else if(numLucroProd.value.lenght <1 ||
-		isNaN(numLucroProd.value) == false)
-	{
-		alert("Valor de Lucro Inválido!");
-		numLucroProd.focus();
-		return false;
-	}
-		else if(numValorVendaProd.value.lenght <1 ||
-		isNaN(numValorVendaProd.value) == false)
-	{
-		alert("Valor de Venda Inválida!");
-		numValorVendaProd.focus();
-		return false;
-	}
-	else if(urlImage.value.lenght <1 ||
-		isNaN(urlImage.value) == false)
-	{
-		alert("Favor incluir URL da Imagem!");
-		urlImage.focus();
-		return false;
-	}
-	else 
-	{
-		alert("Produto Castrado com sucesso!");
-		document.getElementById('cod_prod').value='';
-		document.getElementById('txtNomeProduto').value='';
-		document.getElementById('txtDescricaoProduto').value='';
-		document.getElementById('numAquisicaoProd').value='';
-		document.getElementById('numLucroProd').value='';
-		document.getElementById('numValorVendaProd').value='';
-	}	
-
-}
 </script>
 
 <?php

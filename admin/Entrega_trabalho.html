@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">    <!-- Correção de Caracteres Especiais -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>SB Admin - Start Bootstrap Template</title>
+  <!-- Bootstrap core CSS-->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template-->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin.css" rel="stylesheet">
+</head>
+
+	<!-- Formulário de Upload -->
+
+<body class="bg-dark">
+  <div class="container">
+    <div class="card card-register mx-auto mt-5">
+      <div class="card-header">Submissão de Trabalho</div>
+      <div class="card-body">
+        <form>
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col-md-6">
+                <label for="faculdade">Faculdade</label>
+				<select name="Curso" class="form-control" id="faculdade" type="text" aria-describedby="faculdadeHelp" placeholder="Escolha a faculdade!">
+					<option value="Error">Escolha a Faculdade</option>
+					<option value="Fatec Ipiranga">Fatec Ipiranga</option>
+				</select>
+              </div>
+              <div class="col-md-6">
+                <label for="nomeCurso">Curso</label>
+				<select class="form-control"  id="nomeCurso" type="text" aria-describedby="cursoHelp" placeholder="Escolha o Curso!" name="Curso">
+					<option value="Error">Escolha o Curso</option>
+					<option value="Analise e Desenvolvimento de Sistemas">Análise e Desenvolvimento de Sistemas</option>
+					<option value="Eventos">Eventos</option>
+					<option value="Gestão Comercial">Gestão Comercial</option>
+					<option value="Gestão Empresarial">Gestão Empresarial</option>
+					<option value="Recursos Humanos">Recursos Humanos</option>
+				</select>              
+              </div>
+            </div>
+          </div>
+          
+		  <div class="form-group">
+            <label for="trabalho">Trabalho</label>
+				<select class="form-control" id="nomeTrabalho" type="text" aria-describedby="textoHelp" placeholder="Escolha o trabalho a ser submetido!" name="Trabalho">
+					<option value="Error">Escolha o Trabalho</option>
+					<option value="Trabalho 1 - ----">Trabalho 1 - ----</option>
+					<option value="Trabalho 2 - ----">Trabalho 2 - ----</option>
+					<option value="Trabalho 3 - ----">Trabalho 3 - ----</option>
+				</select>              
+          </div>
+          
+		  <div class="form-group">  
+			<div class="form-row">
+				<div class="col-md-6">
+					<label for="DataDeEntregaLimite">Data limite para Submissão</label>
+					<input class="form-control" id="dataLimite" type="date" aria-describedby="dataLimiteHelp" name="dataLimite">          
+				</div>
+			
+				<div class="col-md-6">
+					<label for="DataDeEntregaLimite">Horário limite para Submissão</label>
+					<input class="form-control" id="horarioLimite" type="time" aria-describedby="horarioLimiteHelp" name="horaLimite">     
+				</div>
+			</div>
+		  
+		   <div class="form-group">  
+					<label for="uploadArquivo">Upload do Documento</label>
+					<input class="form-control" id="uploadArquivo" type="file" aria-describedby="uploadHelp" name="uploadArquivo">          
+				</div>
+				
+          </div>
+          
+		  <a class="btn btn-primary btn-block" href="index.html">Submeter</a>
+        </form>
+		
+        <div class="text-center">
+          <a class="d-block small mt-3" href="faq.html">Dúvidas</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+</body>
+
+</html>
